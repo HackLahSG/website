@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -9,6 +9,7 @@ const Header = () => {
       <h2 className="head-text" >Join us for a day of Hacking</h2>
       <h1 className="head-text" >  March 18th 2023 <br/>9:00am–9:00pm</h1>
       <h3 className="head-text" >???, Singapore </h3>
+      <Link href="/register"><input type="button" value="Register Now" className="RegButton"></input></Link>
     </div>
   )
 }
