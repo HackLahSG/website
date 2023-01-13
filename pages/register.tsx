@@ -4,7 +4,14 @@ export default function Register() {
     <div className='bg'>
     <Image src="/images/logo.png" alt="Picture of the author" width={700} height={250} className="logo" />
     <h1 className='regtext'>Let's get you registered!</h1>
-    <h1 className='dear'>Dear Hacker, we are extremely excited to meet you at Hacklah! Please fill out the registration<br/>form below</h1>
+    <div className='email'>
+    <h1>Email</h1>
+    <input type='text'></input>
+    </div> 
+    <div className='fullname'>
+    <h1>Full name</h1>
+    <input type='text'></input>
+    </div>
     </div>
   ) 
 }

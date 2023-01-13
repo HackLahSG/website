@@ -4,12 +4,19 @@ import Image from 'next/image'
 const Body = () => {
   return (
 
-    <div className='bg'>
+    <div>
         <h1 className={`titles title1`}>What is<br/>HackLah!?</h1>
         <h2 className={`infotext infotext1`}>HackLah! is a full-day hackathon event hosted by students, for students around the tiny red dot — Singapore. Come together to build projects and share them with the world!
         Let's make one thing clear: we don't mean hack as in gain unauthorized access and take things, we mean create and tinker something new.</h2>
-        <Image src="/images/image1.jpg" alt="Picture of the author" width={530} height={228} className='image1'/>
-        <h1 className={`titles title2`}>At HackLah!, 100+ of us will come together to...</h1>
+        <Image src="/images/image1.jpg" alt="Picture of the author" width={530} height={300} className='image1'/>
+        <h1 className={`titles details`}>Details</h1>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5632.912827907666!2d103.82352216397369!3d1.2528980125220164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19557bd3cdd1%3A0x4738e8af5f70f2c2!2sBattlestar%20Galactica!5e0!3m2!1sen!2ssg!4v1673619662790!5m2!1sen!2ssg"
+        width={423}
+        height={345}
+        style={{ border: 0, marginLeft:950, marginTop: 350}}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"/>
     </div>
   )
 }
