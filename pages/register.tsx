@@ -3,7 +3,7 @@ export default function Register() {
   return (
     <div className='bg'>
     <Image src="/images/logo.png" alt="Picture of the author" width={700} height={250} className="logo" />
-    <h1 className='regtext'>Let's get you registered!</h1>
+    <h1 className='regtext'>Let&apos;s get you registered!</h1>
     <div className='email'>
     <h1>Email</h1>
     <input type='text'></input>
