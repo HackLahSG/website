@@ -2,9 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader: "akamai",
-    path: "/",
-   },
+    domains: [
+      'www.your-domain-name.com',
+    ]
+  },
 }
 
 module.exports = nextConfig
