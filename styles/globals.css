@@ -241,3 +241,28 @@ a:link {
 a:visited {
   color: red;
 }
+
+.footer{
+  padding-top: 5%;
+  background-image: url(/images/footer.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+}
+
+.footertxt{
+  margin: 0;
+  margin-left: 2%;
+  padding-top: 1%;
+}
+
+.footerbutton{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.footbox{
+  margin: 0;
+  background-color: #ec3750;
+}
