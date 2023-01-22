@@ -51,7 +51,7 @@
 .titles{
   position:absolute;
   color: #eee;
-  font-size: 500%;
+  font-size: 8vw;
   line-height: 1;
   text-shadow: 0 0 20px #ec3750, 0 0 30px #ec3750;
   line-height: 2.5rem;
@@ -105,11 +105,11 @@ input[type='text']{
 }
 
 h2 {
-  font-size: 200%; 
+  font-size: 3vw; 
 }
 
 h1{
-  font-size: 350%;
+  font-size: 5vw;
 }
 h3{
   font-size: 300%;
@@ -133,11 +133,11 @@ h3{
 
 .image1{
   position:absolute;
-  bottom: -390px;
   left: 20px;
-  width: 35%;
-  max-width: 100vh;
-  min-height: 35vh;
+  top: 130%;
+  max-width: 35%;
+  height: auto;
+
 }
 
 .img404{
@@ -149,4 +149,18 @@ h3{
   margin-left: 25%;
   border: 0;
   background-color:black;
+}
+
+.map-container {
+  width: 100%;
+  border: none;
+  padding-bottom: 66.67%;
+}
+
+.map-container iframe {
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
