@@ -202,6 +202,7 @@ h3{
 .faq-container{
   margin: auto;
   min-width: 80%;
+  max-width: 90%;
   margin-top: 20%;
   height: auto;
   display: flex;
