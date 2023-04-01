@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { relative } from 'path'
 
 const Body = () => {
   return (
@@ -17,11 +18,16 @@ const Body = () => {
         className="map-container"/>
         <h2 className={'infotext detailstext'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
         <Image src={"/images/FAQ.png"} alt="faq" width={530} height={300} className='faq-container'/>
-        <div>
+        <div className='center'>
         <h1 className={`titles sponsors`}>Sponsors:</h1>
-        <Link href="https://gen.xyz/"><Image src={"/images/xyz.png"} alt=".xyz" width={530} height={300} className='xyz'/></Link>
-        <p className={`infotext prospectus`}>Want to support us? Read our sponsorship <Link href="https://drive.google.com/file/d/1FnQeNZlfaIBwlwxDYzhMCnBtcm333man/view?usp=sharing" >prospectus</Link> and then reach out to us at <Link href="mailto: aarav@hacklah.com">aarav@hacklah.com</Link> or donate <Link href='https://bank.hackclub.com/donations/start/hacklahsg'>here</Link></p>
         </div>
+        <div className='images'>
+        <Link href="https://gen.xyz/"><Image src={"/images/xyz.png"} alt=".xyz" width={210} height={123} style={{paddingLeft: 60}} className={''}/></Link>
+        <Link href="https://artofproblemsolving.com/online"><Image src={"/images/aops.png"} alt="aops" width={250} height={100} style={{paddingLeft: 60}} className={''}/></Link>
+        <Link href="https://www.taskade.com/"><Image src={"/images/taskade.png"} alt="taskade" width={123} height={123} style={{paddingLeft: 60}}className={''}/></Link>
+        </div>
+        <p className={`infotext prospectus`}>Want to support us? Read our sponsorship <Link href="https://drive.google.com/file/d/1FnQeNZlfaIBwlwxDYzhMCnBtcm333man/view?usp=sharing" >prospectus</Link> and then reach out to us at <Link href="mailto: aarav@hacklah.com">aarav@hacklah.com</Link> or donate <Link href='https://bank.hackclub.com/donations/start/hacklahsg'>here</Link></p>
+
         <Link href="https://hackclub.com/bank/"><Image src={"/images/hcb.png"} alt="hcb" width={530} height={300} className='hcb'/></Link>
     </div>
   )

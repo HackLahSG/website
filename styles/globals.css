@@ -208,15 +208,22 @@ h3{
   align-items: center;
 }
 
-.sponsors{
-  margin-left: 33%;
-  margin-top: 6%;
+.sponsors {
+  width: 8em;
+  display: block;
+  margin-left: 30%;
+}
+.images{
+  padding-top: 5em;
+}
+center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
 }
 
 .xyz{
-  margin: auto;
-  margin-top:20%;
-  margin-left: 20%;
+  position: fixed;
   width:20%;
   height: auto;
 }
