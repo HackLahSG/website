@@ -25,6 +25,8 @@ const Body = () => {
         <Link href="https://gen.xyz/"><Image src={"/images/xyz.png"} alt=".xyz" width={210} height={123} style={{paddingLeft: 60}} className={''}/></Link>
         <Link href="https://artofproblemsolving.com/online"><Image src={"/images/aops.png"} alt="aops" width={250} height={100} style={{paddingLeft: 60}} className={''}/></Link>
         <Link href="https://www.taskade.com/"><Image src={"/images/taskade.png"} alt="taskade" width={123} height={123} style={{paddingLeft: 60}}className={''}/></Link>
+        <Link href="https://www.leading-learners.com/"><Image src={"/images/LL.png"} alt="LL" width={248} height={62} style={{paddingLeft: 60}}className={''}/></Link>
+        <Link href="https://www.echo3d.com/"><Image src={"/images/echo3D.png"} alt="echo3D" width={250} height={40} style={{paddingLeft: 60}}className={''}/></Link>
         </div>
         <p className={`infotext prospectus`}>Want to support us? Read our sponsorship <Link href="https://drive.google.com/file/d/1FnQeNZlfaIBwlwxDYzhMCnBtcm333man/view?usp=sharing" >prospectus</Link> and then reach out to us at <Link href="mailto: aarav@hacklah.com">aarav@hacklah.com</Link> or donate <Link href='https://bank.hackclub.com/donations/start/hacklahsg'>here</Link></p>
 
