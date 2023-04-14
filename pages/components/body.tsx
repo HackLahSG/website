@@ -25,6 +25,9 @@ const Body = () => {
       <div className="center">
         <h1 className="titles sponsors">Sponsors:</h1>
       </div>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <Link href="https://www.hudsonrivertrading.com/"><Image src={"/images/hrt.svg"} alt="hrt" width={210} height={123} style={{paddingTop: 90}} className="bounce" /></Link>
+      </div>
       <Marquee speed={40} gradient={false}>
         <div className="images">
           <Link href="https://gen.xyz/"><Image src={"/images/xyz.png"} alt=".xyz" width={210} height={123} style={{paddingLeft: 60}} className="" /></Link>
@@ -32,6 +35,9 @@ const Body = () => {
           <Link href="https://www.taskade.com/"><Image src={"/images/taskade.png"} alt="Taskade" width={123} height={123} style={{paddingLeft: 60}} className="" /></Link>
           <Link href="https://www.leading-learners.com/"><Image src={"/images/LL.png"} alt="Leading Learners" width={492} height={123} style={{paddingLeft: 60}} className="" /></Link>
           <Link href="https://www.echo3d.com/"><Image src={"/images/echo3D.png"} alt="Echo3D" width={250} height={40} style={{paddingLeft: 60, paddingBottom: 30}} className="" /></Link>
+          <Link href="https://1password.com/"><Image src={"/images/1p.png"} alt="1Password" width={123} height={123} style={{paddingLeft: 60}} className="" /></Link>
+          <Link href="https://tiiny.host/"><Image src={"/images/th.png"} alt="Tiinyhost" width={250} height={80} style={{paddingLeft: 60, paddingBottom: 30}} className="" /></Link>
+
         </div>
       </Marquee>
       <p className="infotext prospectus">
