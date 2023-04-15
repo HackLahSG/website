@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <h1 className={`titles footertxt bounce`}>Ready to hack?</h1>
-      <Link href="/register"><input type="button" value="Register Now" className="RegButton footerbutton"></input></Link>
+      <Link href="/register"><button className="footerbutton" style={{marginLeft:"2%"}}>Register</button></Link>
 <div style={{ display: "flex", justifyContent: "space-between" }}>
   <p className={`infotext footbox disable-link`} style={{ marginRight: "auto", width: "100%"}}>
     Made with ❤️ by the ️HackLah! Team.
