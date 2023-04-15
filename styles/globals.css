@@ -229,7 +229,7 @@ center{
   margin-left:40%;
   width:20%;
   height: auto;
-  margin-top: 20%
+  margin-top: 10%
 }
 
 .prospectus{
@@ -315,4 +315,20 @@ button:active {
  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
  transform: translateY(5px);
  transition: 200ms;
+}
+
+.pfplink {
+  fill: #ec3750;
+}
+
+.pfplink:hover {
+  fill: white;
+}
+
+.icon-container {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-around; /* adjust as needed */
+  align-items: center; /* adjust as needed */
+  width: 100%; /* adjust as needed */
 }
