@@ -109,7 +109,7 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 <form className="form" onSubmit={handleSubmit}>
   
 <div className='infoblockreg'>
-<p style={{marginLeft:"2%"}}>Yo nerd,<br/><br/> You're Invited! It's hackathon season and for the first time ever HackLah! is here.<br/>
+<p style={{marginLeft:"2%"}}>Yo nerd,<br/><br/> You&apos;re Invited! It&apos;s hackathon season and for the first time ever HackLah! is here.<br/>
 <br/>
 📅 &nbsp;&nbsp;<b>Date & Time:</b> Starts at 9 a.m. and ends at 9 p.m. on TBD.
 <br/>
@@ -121,7 +121,7 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 <b>💻&nbsp;&nbsp;Eligibility:</b> all secondary, pre-university and JC students are welcome to join (no experience required!).
 <br/>
 <br/>
-Do show up if you've registered as you could be taking up someone else's chance to experience a Hackathon. Reach out to us at <a href="mailto:aarav@hacklah.com">aarav@hacklah.com</a> to cancel or for any enquries.
+Do show up if you&apos;ve registered as you could be taking up someone else&apos;s chance to experience a Hackathon. Reach out to us at <a href="mailto:aarav@hacklah.com">aarav@hacklah.com</a> to cancel or for any enquries.
 
 </p>
 
@@ -159,7 +159,7 @@ Do show up if you've registered as you could be taking up someone else's chance 
     <select id="technical-skills" className="select_field" required>
       <option value="" disabled selected>Select a level</option>
       <option value="B">Beginner - I suck</option>
-      <option value="I">Intermediate - It's all cool but I'm no wizard</option>
+      <option value="I">Intermediate - It&apos;s all cool but I&apos;m no wizard</option>
       <option value="A">Advanced - Instead of dodging bullets, you dodge syntax errors.</option>
     </select>
   </div>
