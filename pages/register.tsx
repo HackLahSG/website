@@ -4,11 +4,11 @@ import Image from 'next/image'
 export default function Register() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    let fullName = document.getElementById('fullName')?.value || '';
-    let contactEmail = document.getElementById('contactEmail')?.value || '';
-    let birthday = document.getElementById('birthday')?.value || '';
-    let tshirtSize = document.getElementById('tshirtSize')?.value || '';
-    let techSkills = document.getElementById('technical-skills')?.value || '';
+    let fullName = (document.getElementById('fullName') as HTMLInputElement)?.value || '';
+    let contactEmail = (document.getElementById('contactEmail')as HTMLInputElement)?.value || '';
+    let birthday = (document.getElementById('birthday') as HTMLInputElement)?.value || '';
+    let tshirtSize = (document.getElementById('tshirtSize') as HTMLInputElement)?.value || '';
+    let techSkills = (document.getElementById('technical-skills') as HTMLInputElement)?.value || '';
     
     const today = new Date();
     const birthdate = new Date(birthday);
