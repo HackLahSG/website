@@ -12,6 +12,7 @@ const Body = () => {
         Let&apos;s make one thing clear: we don&apos;t mean hack as in gain unauthorized access and take things, we mean create and tinker something new.
       </h2>
       <Image src={"/images/image1.png"} id='image1'alt="image1" width={530} height={300} className='image1 max-w-full h-auto'/>
+      <div id ="details">
       <h1 className="titles details bounce">Details</h1>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5632.912827907666!2d103.82352216397369!3d1.2528980125220164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19557bd3cdd1%3A0x4738e8af5f70f2c2!2sBattlestar%20Galactica!5e0!3m2!1sen!2ssg!4v1673619662790!5m2!1sen!2ssg"
@@ -21,6 +22,7 @@ const Body = () => {
       <h2 className="infotext detailstext">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </h2>
+      </div>
       <Image src={"/images/FAQ.png"} alt="Frequently Asked Questions" width={530} height={300} className="faq-container"/>
       <div className="center">
         <h1 className="titles sponsors">Sponsors:</h1>

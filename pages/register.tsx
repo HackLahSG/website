@@ -1,9 +1,172 @@
-import Image from 'next/image' 
+import Image from 'next/image'
+
+
 export default function Register() {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    let fullName = document.getElementById('fullName')?.value || '';
+    let contactEmail = document.getElementById('contactEmail')?.value || '';
+    let birthday = document.getElementById('birthday')?.value || '';
+    let tshirtSize = document.getElementById('tshirtSize')?.value || '';
+    let techSkills = document.getElementById('technical-skills')?.value || '';
+    
+    const today = new Date();
+    const birthdate = new Date(birthday);
+  
+    // Validate full name
+    if (!fullName.trim()) {
+      alert("Please enter your full name.");
+      return;
+    }
+  
+    // Validate contact email
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(contactEmail)) {
+      alert("Please enter a valid contact email.");
+      return;
+    }
+  
+    // Validate age
+    const ageDiffMs = today.getTime() - birthdate.getTime();
+    const ageDate = new Date(ageDiffMs);
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    if (age < 11) {
+      alert("You must be at least 11 years old to participate.");
+      return;
+    }
+  
+    // Validate T-shirt size
+    if (!tshirtSize) {
+      alert("Please select a T-shirt size.");
+      return;
+     }
+  
+  
+    // If all validations pass, log the form data
+    console.log({
+      fullName,
+      contactEmail,
+      birthday,
+      tshirtSize,
+      techSkills
+    });    
+
+    const apiKey = ''; // Replace with your actual API key
+    const baseId = ''; // Replace with your actual base ID
+    const tableName = ''; // Replace with your actual table id
+
+// Make a GET request to retrieve all records from a table
+fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
+  headers: {
+    Authorization: `Bearer ${apiKey}`,
+  },
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Do something with the retrieved data
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+// Make a POST request to create a new record in a table
+fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${apiKey}`,
+  },
+  body: JSON.stringify({
+    fields: {
+      Name: fullName,
+      Email: contactEmail,
+      Size: tshirtSize,
+      Proficiency: techSkills,
+    },
+  }),
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    window.location.href = '/';
+
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+  const form = event.currentTarget;
+  form.reset();
+
+  };
+  
   return (
-    <div className="bg">
-    <Image src={"/images/logo.png"} alt="logor" width={700} height={250} className="logo" />
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWmtThZlEbIszOLOUUH5yModrGSozj1Yz_8wXRIhEyUQ3_JQ/viewform?embedded=true" width="640" height="1400" className="form">Loading…</iframe>
-    </div>
-  ) 
+    <div className='o' id='form'>
+<div>
+<Image src={"/images/logo.png"} alt="logo" width={500} height={200} className="logo" />
+</div>
+
+<form className="form" onSubmit={handleSubmit}>
+  
+<div className='infoblockreg'>
+<p style={{marginLeft:"2%"}}>Yo nerd,<br/><br/> You're Invited! It's hackathon season and for the first time ever HackLah! is here.<br/>
+<br/>
+📅 &nbsp;&nbsp;<b>Date & Time:</b> Starts at 9 a.m. and ends at 9 p.m. on TBD.
+<br/>
+<br/>
+
+<b>📍&nbsp;&nbsp;Venue:</b> TBD
+<br/>
+<br/>
+<b>💻&nbsp;&nbsp;Eligibility:</b> all secondary, pre-university and JC students are welcome to join (no experience required!).
+<br/>
+<br/>
+Do show up if you've registered as you could be taking up someone else's chance to experience a Hackathon. Reach out to us at <a href="mailto:aarav@hacklah.com">aarav@hacklah.com</a> to cancel or for any enquries.
+
+</p>
+
+
+
+</div>
+
+<div className="input_container">
+<label htmlFor="fullName" className="input_label">Full Name</label>
+<input type="text" id="fullName" className="input_field" placeholder="Your Name" required />
+</div>
+
+<div className="input_container">
+    <label htmlFor="contactEmail" className="input_label">Contact Email</label>
+    <input type="email" id="contactEmail" className="input_field" placeholder="example@example.com" required />
+  </div>
+
+  <div className="input_container">
+    <label htmlFor="birthday" className="input_label">Birthday (Age must be more than 11)</label>
+    <input type="date" id="birthday" className="input_field" placeholder="YYYY-MM-DD" required/>
+  </div>
+
+  <div className="input_container">
+    <label htmlFor="tshirtSize" className="input_label">T-Shirt Size</label>
+    <select id="tshirtSize" className="select_field" required>
+      <option value="" disabled selected>Select a size</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </div>
+
+  <div className="input_container">
+    <label htmlFor="technical-skills" className="input_label">Proficiency Level</label>
+    <select id="technical-skills" className="select_field" required>
+      <option value="" disabled selected>Select a level</option>
+      <option value="B">Beginner - I suck</option>
+      <option value="I">Intermediate - It's all cool but I'm no wizard</option>
+      <option value="A">Advanced - Instead of dodging bullets, you dodge syntax errors.</option>
+    </select>
+  </div>
+
+  <button type="submit" className="submit_button">Submit</button>
+</form>
+</div>
+
+  );
 }
