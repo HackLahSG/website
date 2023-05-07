@@ -98,6 +98,8 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
   const form = event.currentTarget;
   form.reset();
 
+  
+
   };
   
   return (
