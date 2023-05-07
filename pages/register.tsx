@@ -115,7 +115,7 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 <br/>
 <br/>
 
-<b>📍&nbsp;&nbsp;Venue:</b> TBD
+<b>📍&nbsp;&nbsp;Venue:</b> Online
 <br/>
 <br/>
 <b>💻&nbsp;&nbsp;Eligibility:</b> all secondary, pre-university and JC students are welcome to join (no experience required!).

@@ -15,12 +15,12 @@ const Body = () => {
       <div id ="details">
       <h1 className="titles details bounce">Details</h1>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5632.912827907666!2d103.82352216397369!3d1.2528980125220164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19557bd3cdd1%3A0x4738e8af5f70f2c2!2sBattlestar%20Galactica!5e0!3m2!1sen!2ssg!4v1673619662790!5m2!1sen!2ssg"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d68311732.23868714!2d-25.10425640886043!3d41.581486936047924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ssg!4v1683446403663!5m2!1sen!2ssg"
         referrerPolicy="no-referrer-when-downgrade"
         className="map-container"
       />
       <h2 className="infotext detailstext">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        HackLah! would be hosted online using Video Conferencing platforms such as <a href='https://zoom.com'>Zoom</a> and <a href='https://discord.gg/e42r5nFj7X'>Discord</a>. <br/> <br/>We will be using <a href='https://hacklah.devpost.com/'>Devpost</a> for project submissions.
       </h2>
       </div>
       <Image src={"/images/FAQ.png"} alt="Frequently Asked Questions" width={530} height={300} className="faq-container"/>
