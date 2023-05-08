@@ -39,6 +39,7 @@ const Body = () => {
           <Link href="https://www.echo3d.com/"><Image src={"/images/echo3D.png"} alt="Echo3D" width={250} height={40} style={{paddingLeft: 60, paddingBottom: 30}} className="" /></Link>
           <Link href="https://1password.com/"><Image src={"/images/1p.png"} alt="1Password" width={123} height={123} style={{paddingLeft: 60}} className="" /></Link>
           <Link href="https://tiiny.host/"><Image src={"/images/th.png"} alt="Tiinyhost" width={250} height={80} style={{paddingLeft: 60, paddingBottom: 30}} className="" /></Link>
+          <Link href="https://web.programming-hero.com/home/"><Image src={"/images/ph.png"} alt="Programming Hero" width={125} height={125} style={{paddingLeft: 60, paddingBottom: 30}} className="" /></Link>
 
         </div>
       </Marquee>
