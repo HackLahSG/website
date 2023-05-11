@@ -104,9 +104,11 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
   
   return (
     <div className='o' id='form'>
+<a href="/">
 <div>
 <Image src={"/images/logo.png"} alt="logo" width={500} height={200} className="logo" />
 </div>
+</a>
 
 <form className="form" onSubmit={handleSubmit}>
   
