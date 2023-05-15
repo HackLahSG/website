@@ -115,7 +115,7 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 <div className='infoblockreg'>
 <p style={{marginLeft:"2%"}}>Yo nerd,<br/><br/> You&apos;re Invited! It&apos;s hackathon season and for the first time ever HackLah! is here.<br/>
 <br/>
-📅 &nbsp;&nbsp;<b>Date & Time:</b> 12 p.m. on the 3rd of June to at 10 a.m. on 4th of June.
+📅 &nbsp;&nbsp;<b>Date & Time:</b> 5 p.m. on the 3rd of June to at 10 p.m. on 5th of June.
 <br/>
 <br/>
 
