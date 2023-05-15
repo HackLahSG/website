@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 export default function Register() {
@@ -104,12 +105,11 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
   
   return (
     <div className='o' id='form'>
-<a href="/">
+<Link href="/">
 <div>
 <Image src={"/images/logo.png"} alt="logo" width={500} height={200} className="logo" />
 </div>
-</a>
-
+</Link>
 <form className="form" onSubmit={handleSubmit}>
   
 <div className='infoblockreg'>
