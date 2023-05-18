@@ -20,7 +20,7 @@ const Body = () => {
         className="map-container"
       />
       <h2 className="infotext detailstext">
-        HackLah! would be hosted online using Video Conferencing platforms such as <a href='https://zoom.com'>Zoom</a> and <a href='https://discord.gg/e42r5nFj7X'>Discord</a>. <br/> <br/>We will be using <a href='https://hacklah.devpost.com/'>Devpost</a> for project submissions.
+        HackLah! would be hosted online using Video Conferencing platforms such as <a href='https://zoom.com'>Zoom</a>. Not to forget the good ol' <a href='https://discord.gg/e42r5nFj7X'>Discord</a>. <br/> <br/>We will be using <a href='https://hacklah.devpost.com/'>Devpost</a> for project submissions.
       </h2>
       </div>
       <Image src={"/images/FAQ.png"} alt="Frequently Asked Questions" width={530} height={300} className="faq-container"/>
