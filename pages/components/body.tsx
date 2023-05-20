@@ -32,7 +32,7 @@ const Body = () => {
       </div>
       <Marquee speed={40} gradient={false}>
         <div className="images">
-          <Link href="https://gen.xyz/"><Image src={"/images/xyz.png"} alt=".xyz" width={210} height={123} style={{paddingLeft: 60}} className="" /></Link>
+          <Link href="https://www.interviewcake.com/"><Image src={"/images/ic.png"} alt="Interview Cake" width={125} height={123} style={{paddingLeft: 60}} className="" /></Link>
           <Link href="https://artofproblemsolving.com/online"><Image src={"/images/aops.png"} alt="Art of Problem Solving" width={250} height={100} style={{paddingLeft: 60}} className="" /></Link>
           <Link href="https://www.taskade.com/"><Image src={"/images/taskade.png"} alt="Taskade" width={123} height={123} style={{paddingLeft: 60}} className="" /></Link>
           <Link href="https://www.leading-learners.com/"><Image src={"/images/LL.png"} alt="Leading Learners" width={492} height={123} style={{paddingLeft: 60}} className="" /></Link>
