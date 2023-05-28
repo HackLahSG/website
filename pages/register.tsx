@@ -89,7 +89,7 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
   .then(response => response.json())
   .then(data => {
     console.log(data);
-    window.location.href = '/';
+    window.location.href = '/hello';
 
   })
   .catch(error => {
