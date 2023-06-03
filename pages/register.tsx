@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 
 export default function Register() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  /*const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => { 
     event.preventDefault();
     let fullName = (document.getElementById('fullName') as HTMLInputElement)?.value || '';
     let contactEmail = (document.getElementById('contactEmail')as HTMLInputElement)?.value || '';
@@ -101,7 +101,7 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 
   
 
-  };
+  }; */
   
   return (
     <div className='o' id='form'>
@@ -110,10 +110,10 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 <Image src={"/images/logo.png"} alt="logo" width={500} height={200} className="logo" />
 </div>
 </Link>
-<form className="form" onSubmit={handleSubmit}>
+{/* <form className="form" onSubmit={handleSubmit}> */}
   
 <div className='infoblockreg'>
-<p style={{marginLeft:"2%"}}>Yo nerd,<br/><br/> You&apos;re Invited! It&apos;s hackathon season and for the first time ever HackLah! is here.<br/>
+{/* <p style={{marginLeft:"2%"}}>Yo nerd,<br/><br/> You&apos;re Invited! It&apos;s hackathon season and for the first time ever HackLah! is here.<br/>
 <br/>
 📅 &nbsp;&nbsp;<b>Date & Time:</b> 5 p.m. on the 3rd of June to at 10 p.m. on 5th of June.
 <br/>
@@ -127,13 +127,15 @@ fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
 <br/>
 Do show up if you&apos;ve registered as you could be taking up someone else&apos;s chance to experience a Hackathon. Reach out to us at <a href="mailto:aarav@hacklah.com">aarav@hacklah.com</a> to cancel or for any enquries.
 
-</p>
+</p> */}
+
+Registrations have been closed.
 
 
 
 </div>
 
-<div className="input_container">
+{/* <div className="input_container">
 <label htmlFor="fullName" className="input_label">Full Name</label>
 <input type="text" id="fullName" className="input_field" placeholder="Your Name" required />
 </div>
@@ -169,7 +171,7 @@ Do show up if you&apos;ve registered as you could be taking up someone else&apos
   </div>
 
   <button type="submit" className="submit_button">Submit</button>
-</form>
+</form> */}
 </div>
 
   );
