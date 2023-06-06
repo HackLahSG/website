@@ -52,9 +52,9 @@ export default function Register() {
       techSkills
     });    
 
-    const apiKey = 'pat4WEsvlUpI9ROZf.4dfd41cd6111ab2b96b6942ea9095eafa8f083571f44bba37bd497dd4e657bbe'; // Replace with your actual API key
-    const baseId = 'appBj2vWvfpuoiZAj'; // Replace with your actual base ID
-    const tableName = 'tbl5eM02rT51YG3cB'; // Replace with your actual table name
+    const apiKey = ''; // Replace with your actual API key
+    const baseId = ''; // Replace with your actual base ID
+    const tableName = ''; // Replace with your actual table name
 
 // Make a GET request to retrieve all records from a table
 fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
